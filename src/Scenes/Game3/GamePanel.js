@@ -96,8 +96,8 @@ export default function Scene2({ finishGame, _baseGeo, stopSound }) {
             + _baseGeo.height * (translateStartPos.y) + 'px)'
 
         characterList[0].current.setPosInfo({
-            l: layoutStartPos.x + 0.02 + targetRange * currentNum,
-            b: layoutStartPos.y + 0.00 + stepRange * heightList[currentNum - 1]
+            l: layoutStartPos.x + 0.06 + targetRange * currentNum,
+            b: layoutStartPos.y + 0.02 + stepRange * heightList[currentNum - 1]
         })
     }
 

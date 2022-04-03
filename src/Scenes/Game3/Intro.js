@@ -111,7 +111,7 @@ const BaseScene = React.forwardRef(({ nextFunc, _geo, _baseGeo, showMusicBtn }, 
         if (isTrue)
             setTimeout(() => {
                 playerPanel.current.className = 'hideObject'
-            }, 200);
+            }, 300);
 
         aniChracterObj.current.stop();
 
@@ -143,9 +143,9 @@ const BaseScene = React.forwardRef(({ nextFunc, _geo, _baseGeo, showMusicBtn }, 
                         <div
                             className='introText'
                             style={{
-                                position: "fixed", width: _baseGeo.width * 0.45 + "px",
-                                left: _baseGeo.width * 0.35 + _baseGeo.left + "px"
-                                , bottom: _baseGeo.height * 0.4 + _baseGeo.bottom + "px",
+                                position: "fixed", width: _baseGeo.width * 0.35 + "px",
+                                left: _baseGeo.width * 0.4 + _baseGeo.left + "px"
+                                , top: _baseGeo.height * 0.2 + _baseGeo.bottom + "px",
                             }}>
                             <img draggable={false} width={"100%"}
                                 src={prePathUrl() + 'images/SB54_Intro BG/SB_54_Intro_Game_3_TI_01.svg'}
@@ -194,7 +194,7 @@ const BaseScene = React.forwardRef(({ nextFunc, _geo, _baseGeo, showMusicBtn }, 
                                 position: 'fixed',
                                 width: _baseGeo.width * 0.14 + 'px',
                                 left: _baseGeo.width * 0.055 + 'px',
-                                top: _baseGeo.height * 0.26 + 'px',
+                                bottom: _baseGeo.height * 0.16 + 'px',
                                 pointerEvents: 'none',
                                 overflow: 'visible'
                             }}
