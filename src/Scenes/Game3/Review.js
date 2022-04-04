@@ -29,7 +29,7 @@ export default function Review1({ _baseGeo, nextFunc }) {
                                 setTimeout(() => {
                                     nextFunc()
                                 }, 2000);
-                        }, 1000 * index);
+                        }, 1500 * index);
                     })
                 }, audioList.bodyAudio.duration * 1000);
             }, 2000);
